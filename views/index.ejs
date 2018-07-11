@@ -1,0 +1,10 @@
+<html>
+	<h1>Check out our bitchin' zords:</h1>
+	<% for (var zord in zords) { %>
+	<p>Name:<%= zords[zord].name %></p>
+	<a href = "/zords/<%= zords[zord].id %>">More info </a>
+	<% } %>
+
+	<a href = "/zords/new">Let's make a zord!</a>
+</html>
+

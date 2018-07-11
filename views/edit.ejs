@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create a new Zord</title>
+</head>
+<body>
+<h1>Create a zord</h1>
+
+<form action = "/zords/<%=zord.id %>" method = 'post'>
+	<p>Name: <input type="text" name="name" value = "<%= zord.name %>"></p>
+	<p>Ranger: <input type="text" name="ranger" value = "<%= zord.ranger %>"></p>
+	<p>Part of the megazord: <input type="text" name="part" value = "<%= zord.part %>"></p>
+	<p>Coolness rating: <input type="number" name="coolness" value = "<%= zord.coolness %>"></p>
+	<input type="submit" value = "update zord">
+</form>	
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>Name: <%= zord.name %></h1>
+	<h1>Ranger: <%= zord.ranger %></h1>
+	<h1>Part of the Zord: <%= zord.part %></h1>
+	<h1>How cool is it? <%= zord.coolness %></h1>
+	
+	<a href = "/zords/edit/<%= zord.id%>">Edit Zord</a>
+	<form action = "/zords/delete/<%= zord.id%>" method = "post">
+		<input type = "submit" value = "Delete Zord" />
+</body>
+</html>
